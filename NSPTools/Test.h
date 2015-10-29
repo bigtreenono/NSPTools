@@ -10,4 +10,6 @@
 
 @interface Test : UIView
 
+- (void)test;
+
 @end
