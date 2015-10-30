@@ -12,4 +12,6 @@
 
 - (void)test;
 
+- (void)update;
+
 @end
