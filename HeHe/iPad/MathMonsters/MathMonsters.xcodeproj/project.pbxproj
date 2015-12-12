@@ -1,0 +1,539 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D57486341B80754D002308BC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D57486331B80754D002308BC /* main.m */; };
+		D57486371B80754D002308BC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D57486361B80754D002308BC /* AppDelegate.m */; };
+		D574863A1B80754D002308BC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D57486391B80754D002308BC /* ViewController.m */; };
+		D574863D1B80754D002308BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D574863B1B80754D002308BC /* Main.storyboard */; };
+		D574863F1B80754D002308BC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D574863E1B80754D002308BC /* Images.xcassets */; };
+		D57486421B80754D002308BC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D57486401B80754D002308BC /* LaunchScreen.xib */; };
+		D574864E1B80754D002308BC /* MathMonstersTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D574864D1B80754D002308BC /* MathMonstersTests.m */; };
+		D5E474871B816ABE00353DD3 /* LeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5E474861B816ABE00353DD3 /* LeftViewController.m */; };
+		D5E4748A1B816BB000353DD3 /* RightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5E474891B816BB000353DD3 /* RightViewController.m */; };
+		D5E4748D1B816DBA00353DD3 /* Monster.m in Sources */ = {isa = PBXBuildFile; fileRef = D5E4748C1B816DBA00353DD3 /* Monster.m */; };
+		D5E4749B1B81728700353DD3 /* blowgun.png in Resources */ = {isa = PBXBuildFile; fileRef = D5E4748F1B81728700353DD3 /* blowgun.png */; };
+		D5E4749C1B81728700353DD3 /* fire.png in Resources */ = {isa = PBXBuildFile; fileRef = D5E474901B81728700353DD3 /* fire.png */; };
+		D5E4749D1B81728700353DD3 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = D5E474911B81728700353DD3 /* LICENSE.txt */; };
+		D5E4749E1B81728700353DD3 /* meetcatbot.png in Resources */ = {isa = PBXBuildFile; fileRef = D5E474921B81728700353DD3 /* meetcatbot.png */; };
+		D5E4749F1B81728700353DD3 /* meetdogbot.png in Resources */ = {isa = PBXBuildFile; fileRef = D5E474931B81728700353DD3 /* meetdogbot.png */; };
+		D5E474A01B81728700353DD3 /* meetexplodebot.png in Resources */ = {isa = PBXBuildFile; fileRef = D5E474941B81728700353DD3 /* meetexplodebot.png */; };
+		D5E474A11B81728700353DD3 /* meetfirebot.png in Resources */ = {isa = PBXBuildFile; fileRef = D5E474951B81728700353DD3 /* meetfirebot.png */; };
+		D5E474A21B81728700353DD3 /* meeticebot.png in Resources */ = {isa = PBXBuildFile; fileRef = D5E474961B81728700353DD3 /* meeticebot.png */; };
+		D5E474A31B81728700353DD3 /* meetminitomatobot.png in Resources */ = {isa = PBXBuildFile; fileRef = D5E474971B81728700353DD3 /* meetminitomatobot.png */; };
+		D5E474A41B81728700353DD3 /* ninjastar.png in Resources */ = {isa = PBXBuildFile; fileRef = D5E474981B81728700353DD3 /* ninjastar.png */; };
+		D5E474A51B81728700353DD3 /* smoke.png in Resources */ = {isa = PBXBuildFile; fileRef = D5E474991B81728700353DD3 /* smoke.png */; };
+		D5E474A61B81728700353DD3 /* sword.png in Resources */ = {isa = PBXBuildFile; fileRef = D5E4749A1B81728700353DD3 /* sword.png */; };
+		D5E474AA1B81A39900353DD3 /* ColorPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5E474A91B81A39900353DD3 /* ColorPickerViewController.m */; };
+		D5E474AD1B81B8F400353DD3 /* Weapon.m in Sources */ = {isa = PBXBuildFile; fileRef = D5E474AC1B81B8F400353DD3 /* Weapon.m */; };
+		D5E474B11B81BCF500353DD3 /* WeaponInputViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5E474AF1B81BCF500353DD3 /* WeaponInputViewController.m */; };
+		D5E474B21B81BCF500353DD3 /* WeaponInputViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5E474B01B81BCF500353DD3 /* WeaponInputViewController.xib */; };
+		D5E474B51B81C0A500353DD3 /* WeaponSelectorImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = D5E474B41B81C0A500353DD3 /* WeaponSelectorImageView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D57486481B80754D002308BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D57486261B80754C002308BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D574862D1B80754D002308BC;
+			remoteInfo = MathMonsters;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D574862E1B80754D002308BC /* MathMonsters.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MathMonsters.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D57486321B80754D002308BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D57486331B80754D002308BC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D57486351B80754D002308BC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D57486361B80754D002308BC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D57486381B80754D002308BC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D57486391B80754D002308BC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D574863C1B80754D002308BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D574863E1B80754D002308BC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D57486411B80754D002308BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		D57486471B80754D002308BC /* MathMonstersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MathMonstersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D574864C1B80754D002308BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D574864D1B80754D002308BC /* MathMonstersTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MathMonstersTests.m; sourceTree = "<group>"; };
+		D5E474851B816ABE00353DD3 /* LeftViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftViewController.h; sourceTree = "<group>"; };
+		D5E474861B816ABE00353DD3 /* LeftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftViewController.m; sourceTree = "<group>"; };
+		D5E474881B816BB000353DD3 /* RightViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RightViewController.h; sourceTree = "<group>"; };
+		D5E474891B816BB000353DD3 /* RightViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RightViewController.m; sourceTree = "<group>"; };
+		D5E4748B1B816DBA00353DD3 /* Monster.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Monster.h; sourceTree = "<group>"; };
+		D5E4748C1B816DBA00353DD3 /* Monster.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Monster.m; sourceTree = "<group>"; };
+		D5E4748F1B81728700353DD3 /* blowgun.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blowgun.png; sourceTree = "<group>"; };
+		D5E474901B81728700353DD3 /* fire.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fire.png; sourceTree = "<group>"; };
+		D5E474911B81728700353DD3 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		D5E474921B81728700353DD3 /* meetcatbot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = meetcatbot.png; sourceTree = "<group>"; };
+		D5E474931B81728700353DD3 /* meetdogbot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = meetdogbot.png; sourceTree = "<group>"; };
+		D5E474941B81728700353DD3 /* meetexplodebot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = meetexplodebot.png; sourceTree = "<group>"; };
+		D5E474951B81728700353DD3 /* meetfirebot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = meetfirebot.png; sourceTree = "<group>"; };
+		D5E474961B81728700353DD3 /* meeticebot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = meeticebot.png; sourceTree = "<group>"; };
+		D5E474971B81728700353DD3 /* meetminitomatobot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = meetminitomatobot.png; sourceTree = "<group>"; };
+		D5E474981B81728700353DD3 /* ninjastar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ninjastar.png; sourceTree = "<group>"; };
+		D5E474991B81728700353DD3 /* smoke.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = smoke.png; sourceTree = "<group>"; };
+		D5E4749A1B81728700353DD3 /* sword.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sword.png; sourceTree = "<group>"; };
+		D5E474A71B817C8D00353DD3 /* MonsterSelectionDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MonsterSelectionDelegate.h; sourceTree = "<group>"; };
+		D5E474A81B81A39900353DD3 /* ColorPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorPickerViewController.h; sourceTree = "<group>"; };
+		D5E474A91B81A39900353DD3 /* ColorPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorPickerViewController.m; sourceTree = "<group>"; };
+		D5E474AB1B81B8F400353DD3 /* Weapon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Weapon.h; sourceTree = "<group>"; };
+		D5E474AC1B81B8F400353DD3 /* Weapon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Weapon.m; sourceTree = "<group>"; };
+		D5E474AE1B81BCF500353DD3 /* WeaponInputViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeaponInputViewController.h; sourceTree = "<group>"; };
+		D5E474AF1B81BCF500353DD3 /* WeaponInputViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeaponInputViewController.m; sourceTree = "<group>"; };
+		D5E474B01B81BCF500353DD3 /* WeaponInputViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WeaponInputViewController.xib; sourceTree = "<group>"; };
+		D5E474B31B81C0A500353DD3 /* WeaponSelectorImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeaponSelectorImageView.h; sourceTree = "<group>"; };
+		D5E474B41B81C0A500353DD3 /* WeaponSelectorImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeaponSelectorImageView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D574862B1B80754D002308BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D57486441B80754D002308BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D57486251B80754C002308BC = {
+			isa = PBXGroup;
+			children = (
+				D5E4748E1B81728700353DD3 /* MonsterArt */,
+				D57486301B80754D002308BC /* MathMonsters */,
+				D574864A1B80754D002308BC /* MathMonstersTests */,
+				D574862F1B80754D002308BC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D574862F1B80754D002308BC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D574862E1B80754D002308BC /* MathMonsters.app */,
+				D57486471B80754D002308BC /* MathMonstersTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D57486301B80754D002308BC /* MathMonsters */ = {
+			isa = PBXGroup;
+			children = (
+				D57486351B80754D002308BC /* AppDelegate.h */,
+				D57486361B80754D002308BC /* AppDelegate.m */,
+				D57486381B80754D002308BC /* ViewController.h */,
+				D57486391B80754D002308BC /* ViewController.m */,
+				D5E474851B816ABE00353DD3 /* LeftViewController.h */,
+				D5E474861B816ABE00353DD3 /* LeftViewController.m */,
+				D5E474881B816BB000353DD3 /* RightViewController.h */,
+				D5E474891B816BB000353DD3 /* RightViewController.m */,
+				D5E474A71B817C8D00353DD3 /* MonsterSelectionDelegate.h */,
+				D5E4748B1B816DBA00353DD3 /* Monster.h */,
+				D5E4748C1B816DBA00353DD3 /* Monster.m */,
+				D5E474A81B81A39900353DD3 /* ColorPickerViewController.h */,
+				D5E474A91B81A39900353DD3 /* ColorPickerViewController.m */,
+				D5E474AB1B81B8F400353DD3 /* Weapon.h */,
+				D5E474AC1B81B8F400353DD3 /* Weapon.m */,
+				D5E474B31B81C0A500353DD3 /* WeaponSelectorImageView.h */,
+				D5E474B41B81C0A500353DD3 /* WeaponSelectorImageView.m */,
+				D5E474AE1B81BCF500353DD3 /* WeaponInputViewController.h */,
+				D5E474AF1B81BCF500353DD3 /* WeaponInputViewController.m */,
+				D5E474B01B81BCF500353DD3 /* WeaponInputViewController.xib */,
+				D574863B1B80754D002308BC /* Main.storyboard */,
+				D574863E1B80754D002308BC /* Images.xcassets */,
+				D57486401B80754D002308BC /* LaunchScreen.xib */,
+				D57486311B80754D002308BC /* Supporting Files */,
+			);
+			path = MathMonsters;
+			sourceTree = "<group>";
+		};
+		D57486311B80754D002308BC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D57486321B80754D002308BC /* Info.plist */,
+				D57486331B80754D002308BC /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D574864A1B80754D002308BC /* MathMonstersTests */ = {
+			isa = PBXGroup;
+			children = (
+				D574864D1B80754D002308BC /* MathMonstersTests.m */,
+				D574864B1B80754D002308BC /* Supporting Files */,
+			);
+			path = MathMonstersTests;
+			sourceTree = "<group>";
+		};
+		D574864B1B80754D002308BC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D574864C1B80754D002308BC /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D5E4748E1B81728700353DD3 /* MonsterArt */ = {
+			isa = PBXGroup;
+			children = (
+				D5E4748F1B81728700353DD3 /* blowgun.png */,
+				D5E474901B81728700353DD3 /* fire.png */,
+				D5E474911B81728700353DD3 /* LICENSE.txt */,
+				D5E474921B81728700353DD3 /* meetcatbot.png */,
+				D5E474931B81728700353DD3 /* meetdogbot.png */,
+				D5E474941B81728700353DD3 /* meetexplodebot.png */,
+				D5E474951B81728700353DD3 /* meetfirebot.png */,
+				D5E474961B81728700353DD3 /* meeticebot.png */,
+				D5E474971B81728700353DD3 /* meetminitomatobot.png */,
+				D5E474981B81728700353DD3 /* ninjastar.png */,
+				D5E474991B81728700353DD3 /* smoke.png */,
+				D5E4749A1B81728700353DD3 /* sword.png */,
+			);
+			path = MonsterArt;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D574862D1B80754D002308BC /* MathMonsters */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D57486511B80754D002308BC /* Build configuration list for PBXNativeTarget "MathMonsters" */;
+			buildPhases = (
+				D574862A1B80754D002308BC /* Sources */,
+				D574862B1B80754D002308BC /* Frameworks */,
+				D574862C1B80754D002308BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MathMonsters;
+			productName = MathMonsters;
+			productReference = D574862E1B80754D002308BC /* MathMonsters.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D57486461B80754D002308BC /* MathMonstersTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D57486541B80754D002308BC /* Build configuration list for PBXNativeTarget "MathMonstersTests" */;
+			buildPhases = (
+				D57486431B80754D002308BC /* Sources */,
+				D57486441B80754D002308BC /* Frameworks */,
+				D57486451B80754D002308BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D57486491B80754D002308BC /* PBXTargetDependency */,
+			);
+			name = MathMonstersTests;
+			productName = MathMonstersTests;
+			productReference = D57486471B80754D002308BC /* MathMonstersTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D57486261B80754C002308BC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = FNNishipu;
+				TargetAttributes = {
+					D574862D1B80754D002308BC = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					D57486461B80754D002308BC = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = D574862D1B80754D002308BC;
+					};
+				};
+			};
+			buildConfigurationList = D57486291B80754C002308BC /* Build configuration list for PBXProject "MathMonsters" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D57486251B80754C002308BC;
+			productRefGroup = D574862F1B80754D002308BC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D574862D1B80754D002308BC /* MathMonsters */,
+				D57486461B80754D002308BC /* MathMonstersTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D574862C1B80754D002308BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5E474A21B81728700353DD3 /* meeticebot.png in Resources */,
+				D5E474A31B81728700353DD3 /* meetminitomatobot.png in Resources */,
+				D5E474A11B81728700353DD3 /* meetfirebot.png in Resources */,
+				D5E4749D1B81728700353DD3 /* LICENSE.txt in Resources */,
+				D5E474A61B81728700353DD3 /* sword.png in Resources */,
+				D5E4749B1B81728700353DD3 /* blowgun.png in Resources */,
+				D5E474A01B81728700353DD3 /* meetexplodebot.png in Resources */,
+				D5E474B21B81BCF500353DD3 /* WeaponInputViewController.xib in Resources */,
+				D5E474A41B81728700353DD3 /* ninjastar.png in Resources */,
+				D5E4749C1B81728700353DD3 /* fire.png in Resources */,
+				D5E4749F1B81728700353DD3 /* meetdogbot.png in Resources */,
+				D5E474A51B81728700353DD3 /* smoke.png in Resources */,
+				D574863D1B80754D002308BC /* Main.storyboard in Resources */,
+				D5E4749E1B81728700353DD3 /* meetcatbot.png in Resources */,
+				D57486421B80754D002308BC /* LaunchScreen.xib in Resources */,
+				D574863F1B80754D002308BC /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D57486451B80754D002308BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D574862A1B80754D002308BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5E4748D1B816DBA00353DD3 /* Monster.m in Sources */,
+				D5E474B11B81BCF500353DD3 /* WeaponInputViewController.m in Sources */,
+				D5E474AA1B81A39900353DD3 /* ColorPickerViewController.m in Sources */,
+				D5E4748A1B816BB000353DD3 /* RightViewController.m in Sources */,
+				D574863A1B80754D002308BC /* ViewController.m in Sources */,
+				D5E474B51B81C0A500353DD3 /* WeaponSelectorImageView.m in Sources */,
+				D5E474871B816ABE00353DD3 /* LeftViewController.m in Sources */,
+				D5E474AD1B81B8F400353DD3 /* Weapon.m in Sources */,
+				D57486371B80754D002308BC /* AppDelegate.m in Sources */,
+				D57486341B80754D002308BC /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D57486431B80754D002308BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D574864E1B80754D002308BC /* MathMonstersTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D57486491B80754D002308BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D574862D1B80754D002308BC /* MathMonsters */;
+			targetProxy = D57486481B80754D002308BC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D574863B1B80754D002308BC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D574863C1B80754D002308BC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D57486401B80754D002308BC /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D57486411B80754D002308BC /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D574864F1B80754D002308BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		D57486501B80754D002308BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D57486521B80754D002308BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MathMonsters/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D57486531B80754D002308BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MathMonsters/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		D57486551B80754D002308BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MathMonstersTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MathMonsters.app/MathMonsters";
+			};
+			name = Debug;
+		};
+		D57486561B80754D002308BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MathMonstersTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MathMonsters.app/MathMonsters";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D57486291B80754C002308BC /* Build configuration list for PBXProject "MathMonsters" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D574864F1B80754D002308BC /* Debug */,
+				D57486501B80754D002308BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D57486511B80754D002308BC /* Build configuration list for PBXNativeTarget "MathMonsters" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D57486521B80754D002308BC /* Debug */,
+				D57486531B80754D002308BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D57486541B80754D002308BC /* Build configuration list for PBXNativeTarget "MathMonstersTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D57486551B80754D002308BC /* Debug */,
+				D57486561B80754D002308BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D57486261B80754C002308BC /* Project object */;
+}
