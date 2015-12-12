@@ -19,6 +19,9 @@
 		1F6FA9921C1C0E2400673ADC /* Foo.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F6FA9861C1C0E2400673ADC /* Foo.m */; };
 		1F6FA9931C1C0E2400673ADC /* Shylock+Watson.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F6FA9881C1C0E2400673ADC /* Shylock+Watson.m */; };
 		1F6FA9941C1C0E2400673ADC /* Shylock.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F6FA98A1C1C0E2400673ADC /* Shylock.m */; };
+		1F6FA99D1C1C294D00673ADC /* UIButton+NSPTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F6FA99C1C1C294D00673ADC /* UIButton+NSPTools.m */; };
+		1F6FA9A01C1C3C1000673ADC /* NSDictionary+NSPTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F6FA99F1C1C3C1000673ADC /* NSDictionary+NSPTools.m */; };
+		1F6FA9A31C1C3C6C00673ADC /* NSMutableDictionary+NSPTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F6FA9A21C1C3C6C00673ADC /* NSMutableDictionary+NSPTools.m */; };
 		D51E0BFC1BEF349F002E7844 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D51E0BFB1BEF349F002E7844 /* SecondViewController.m */; };
 		D5D7A15B1BE5BCD40089393C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D5D7A15A1BE5BCD40089393C /* main.m */; };
 		D5D7A15E1BE5BCD40089393C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D5D7A15D1BE5BCD40089393C /* AppDelegate.m */; };
@@ -54,6 +57,12 @@
 		1F6FA9881C1C0E2400673ADC /* Shylock+Watson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Shylock+Watson.m"; sourceTree = "<group>"; };
 		1F6FA9891C1C0E2400673ADC /* Shylock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Shylock.h; sourceTree = "<group>"; };
 		1F6FA98A1C1C0E2400673ADC /* Shylock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Shylock.m; sourceTree = "<group>"; };
+		1F6FA99B1C1C294D00673ADC /* UIButton+NSPTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+NSPTools.h"; sourceTree = "<group>"; };
+		1F6FA99C1C1C294D00673ADC /* UIButton+NSPTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+NSPTools.m"; sourceTree = "<group>"; };
+		1F6FA99E1C1C3C1000673ADC /* NSDictionary+NSPTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+NSPTools.h"; sourceTree = "<group>"; };
+		1F6FA99F1C1C3C1000673ADC /* NSDictionary+NSPTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+NSPTools.m"; sourceTree = "<group>"; };
+		1F6FA9A11C1C3C6C00673ADC /* NSMutableDictionary+NSPTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+NSPTools.h"; sourceTree = "<group>"; };
+		1F6FA9A21C1C3C6C00673ADC /* NSMutableDictionary+NSPTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+NSPTools.m"; sourceTree = "<group>"; };
 		D51E0BFA1BEF349F002E7844 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		D51E0BFB1BEF349F002E7844 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		D5D7A1561BE5BCD40089393C /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -156,10 +165,16 @@
 		D5D7A1701BE5BCE60089393C /* NSPTools */ = {
 			isa = PBXGroup;
 			children = (
+				1F6FA99B1C1C294D00673ADC /* UIButton+NSPTools.h */,
+				1F6FA99C1C1C294D00673ADC /* UIButton+NSPTools.m */,
 				D5D7A1741BE5C5290089393C /* UIImage+NSPTools.h */,
 				D5D7A1751BE5C5290089393C /* UIImage+NSPTools.m */,
 				D5D981EC1BE9AA400059C6DD /* UIView+NSPTools.h */,
 				D5D981ED1BE9AA400059C6DD /* UIView+NSPTools.m */,
+				1F6FA9A11C1C3C6C00673ADC /* NSMutableDictionary+NSPTools.h */,
+				1F6FA9A21C1C3C6C00673ADC /* NSMutableDictionary+NSPTools.m */,
+				1F6FA99E1C1C3C1000673ADC /* NSDictionary+NSPTools.h */,
+				1F6FA99F1C1C3C1000673ADC /* NSDictionary+NSPTools.m */,
 				1F1739721C1A682900AF1902 /* NSPStickyHeaderView.h */,
 				1F1739731C1A682900AF1902 /* NSPStickyHeaderView.m */,
 				1F1739751C1A768800AF1902 /* NSPStickyFooterView.h */,
@@ -244,6 +259,7 @@
 				1F6FA98C1C1C0E2400673ADC /* ClassA.m in Sources */,
 				1F6FA9941C1C0E2400673ADC /* Shylock.m in Sources */,
 				D51E0BFC1BEF349F002E7844 /* SecondViewController.m in Sources */,
+				1F6FA9A31C1C3C6C00673ADC /* NSMutableDictionary+NSPTools.m in Sources */,
 				1F6FA98E1C1C0E2400673ADC /* CustomView.m in Sources */,
 				1F1739771C1A768800AF1902 /* NSPStickyFooterView.m in Sources */,
 				1F6FA98D1C1C0E2400673ADC /* ClassB.m in Sources */,
@@ -253,9 +269,11 @@
 				1F6FA9921C1C0E2400673ADC /* Foo.m in Sources */,
 				D5D7A1761BE5C5290089393C /* UIImage+NSPTools.m in Sources */,
 				D5D7A15E1BE5BCD40089393C /* AppDelegate.m in Sources */,
+				1F6FA99D1C1C294D00673ADC /* UIButton+NSPTools.m in Sources */,
 				1F1739741C1A682900AF1902 /* NSPStickyHeaderView.m in Sources */,
 				1F6FA9901C1C0E2400673ADC /* DeriveWebView.m in Sources */,
 				D5D7A15B1BE5BCD40089393C /* main.m in Sources */,
+				1F6FA9A01C1C3C1000673ADC /* NSDictionary+NSPTools.m in Sources */,
 				1F6FA9931C1C0E2400673ADC /* Shylock+Watson.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

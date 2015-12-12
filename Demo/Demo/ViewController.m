@@ -11,11 +11,14 @@
 #import "ClassB.h"
 #import "CustomView.h"
 #import <objc/runtime.h>
+#import "UIButton+NSPTools.h"
+#import "NSDictionary+NSPTools.h"
 
 @interface ViewController () <UIWebViewDelegate>
 @property (weak, nonatomic) IBOutlet UIWebView *webView;
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
 @property (nonatomic, copy) void(^Callback)(void);
+@property (weak, nonatomic) IBOutlet UIButton *button;
 @property (nonatomic, copy) NSMutableArray *array;
 @end
 
@@ -24,12 +27,13 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
-    [_webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"https://www.baidu.com"]]];
-//    CustomView *view = [[NSBundle mainBundle] loadNibNamed:@"CustomView" owner:nil options:nil][0];
-//    view.backgroundColor = [UIColor redColor];
-//    view.testString = @"123";
-//    [self.view addSubview:view];
+    
+    NSDictionary *dic = @{ @"name" : @[ @"peter" ] };
+    NSString *key;
+    NSString *value = [dic objectForKey:@"name"];
+    BOOL b = [dic safeBoolForKey:@"name"];
+    NSLog(@"key %@, value %@, b %d", key, value, b);
+    
 }
 
 - (IBAction)buttonTapped:(id)sender
@@ -48,6 +52,24 @@
 
 - (void)test
 {
+    [_button centerImageAndButton:10 imageOnTop:YES];
+
+    void(^hehe)();
+    
+    hehe = ^{
+        NSLog(@"hehe1");
+    };
+    
+    hehe(1);
+    
+    ^{ printf("Hello, World!\n"); }();
+    
+    char aa = 'A';
+    ^{
+        printf("%cn", aa);
+    }();
+
+    
     NSMutableArray *arr1 = [NSMutableArray array];
     NSMutableArray *arr2 = [NSMutableArray array];
     NSMutableArray *arr3 = [NSMutableArray array];
