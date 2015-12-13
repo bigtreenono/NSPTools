@@ -22,6 +22,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    UILayoutPriority
 //    self.navigationController.navigationBarHidden = YES;
 
 //    NSPStickyFooterView *footerView = [[NSPStickyFooterView alloc] initWithFrame:CGRectMake(0, 0, 0, 44)];
@@ -33,7 +34,7 @@
 //    [footerView addSubview:label];
 //    
 //    [self.tableView addSubview:footerView];
-
+    
     NSPStickyHeaderView *headerView = [[NSPStickyHeaderView alloc] initWithMinimunHeight:150];
     UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"preview"]];
     imageView.frame = headerView.bounds;
