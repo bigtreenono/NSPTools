@@ -27,7 +27,7 @@
 - (void)willMoveToSuperview:(UIView *)newSuperview
 {
     [super willMoveToSuperview:newSuperview];
-    NSLog(@"newSuperview %@", newSuperview);
+    [self.superview removeObserver:self forKeyPath:@"contentOffset" context:nil];
     if (newSuperview)
     {
         NSAssert([newSuperview isKindOfClass:[UIScrollView class]], @"superview must be UIScrollView!");
@@ -35,12 +35,6 @@
         self.autoresizingMask = UIViewAutoresizingFlexibleWidth;
         [newSuperview addObserver:self forKeyPath:@"contentOffset" options:NSKeyValueObservingOptionNew context:nil];
     }
-}
-
-- (void)dealloc
-{
-    NSLog(@"%@ dealloc dealloc dealloc dealloc dealloc", self.class);
-//    [self.superview removeObserver:self forKeyPath:@"contentOffset"];
 }
 
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context

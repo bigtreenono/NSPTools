@@ -23,25 +23,23 @@
 {
     [super viewDidLoad];
 //    self.navigationController.navigationBarHidden = YES;
-    [_webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"https://www.baidu.com"]]];
 
-    NSPStickyFooterView *footerView = [[NSPStickyFooterView alloc] initWithFrame:CGRectMake(0, 0, 0, 44)];
-//    footerView.layer.zPosition = 1;
-    
-    UILabel *label = [[UILabel alloc] initWithFrame:footerView.bounds];
-    label.textAlignment = NSTextAlignmentCenter;
-    label.text = @"This is a footer";
-    label.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
-    [footerView addSubview:label];
-    
-    [self.tableView addSubview:footerView];
+//    NSPStickyFooterView *footerView = [[NSPStickyFooterView alloc] initWithFrame:CGRectMake(0, 0, 0, 44)];
+//    
+//    UILabel *label = [[UILabel alloc] initWithFrame:footerView.bounds];
+//    label.textAlignment = NSTextAlignmentCenter;
+//    label.text = @"This is a footer";
+//    label.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
+//    [footerView addSubview:label];
+//    
+//    [self.tableView addSubview:footerView];
 
-//    NSPStickyHeaderView *headerView = [[NSPStickyHeaderView alloc] initWithMinimunHeight:150];
-//    UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"preview"]];
-//    imageView.frame = headerView.bounds;
-//    imageView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
-//    [headerView addSubview:imageView];
-//    [_tableView addSubview:headerView];
+    NSPStickyHeaderView *headerView = [[NSPStickyHeaderView alloc] initWithMinimunHeight:150];
+    UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"preview"]];
+    imageView.frame = headerView.bounds;
+    imageView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+    [headerView addSubview:imageView];
+    [_tableView addSubview:headerView];
 }
 
 #pragma mark - UITableViewDataSource

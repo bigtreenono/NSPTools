@@ -28,11 +28,11 @@
 {
     [super viewDidLoad];
     
-    NSDictionary *dic = @{ @"name" : @[ @"peter" ] };
-    NSString *key;
-    NSString *value = [dic objectForKey:@"name"];
-    BOOL b = [dic safeBoolForKey:@"name"];
-    NSLog(@"key %@, value %@, b %d", key, value, b);
+    
+    void *a = malloc(1);
+    void *b = malloc(3);
+    NSLog(@"a: %p",a);
+    NSLog(@"b: %p",b);
     
 }
 
