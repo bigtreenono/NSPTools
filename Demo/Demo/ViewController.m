@@ -11,8 +11,8 @@
 #import "ClassB.h"
 #import "CustomView.h"
 #import <objc/runtime.h>
-#import "UIButton+NSPTools.h"
 #import "NSDictionary+NSPTools.h"
+#import "extobjc.h"
 
 @interface ViewController () <UIWebViewDelegate>
 @property (weak, nonatomic) IBOutlet UIWebView *webView;
@@ -28,12 +28,17 @@
 {
     [super viewDidLoad];
     
-    
-    void *a = malloc(1);
-    void *b = malloc(3);
-    NSLog(@"a: %p",a);
-    NSLog(@"b: %p",b);
-    
+//    [self method];
+}
+
+// memory leak
+- (void)method
+{
+    dispatch_async(dispatch_queue_create("test_queue", DISPATCH_QUEUE_SERIAL), ^{
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self method];
+        });
+    });
 }
 
 - (IBAction)buttonTapped:(id)sender
@@ -52,8 +57,6 @@
 
 - (void)test
 {
-    [_button centerImageAndButton:10 imageOnTop:YES];
-
     void(^hehe)();
     
     hehe = ^{

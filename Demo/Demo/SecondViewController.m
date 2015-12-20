@@ -7,40 +7,33 @@
 //
 
 #import "SecondViewController.h"
-#import "NSPStickyHeaderView.h"
-#import "NSPStickyFooterView.h"
+#import "extobjc.h"
 
 @interface SecondViewController () <UIWebViewDelegate, UITableViewDataSource>
 
 @property (weak, nonatomic) IBOutlet UIWebView *webView;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (nonatomic, copy) NSString *testString;
+@property (nonatomic, copy) void (^TextBlock)(void);
 
 @end
 
 @implementation SecondViewController
 
+- (void)dealloc
+{
+    NSLog(@"%@ dealloc dealloc dealloc dealloc dealloc", self.class);
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    UILayoutPriority
-//    self.navigationController.navigationBarHidden = YES;
-
-//    NSPStickyFooterView *footerView = [[NSPStickyFooterView alloc] initWithFrame:CGRectMake(0, 0, 0, 44)];
-//    
-//    UILabel *label = [[UILabel alloc] initWithFrame:footerView.bounds];
-//    label.textAlignment = NSTextAlignmentCenter;
-//    label.text = @"This is a footer";
-//    label.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
-//    [footerView addSubview:label];
-//    
-//    [self.tableView addSubview:footerView];
+    __weak typeof(self) weakSelf = self;
+    __strong typeof(weakSelf) strongSelf = weakSelf;
+    _TextBlock = ^{
+        strongSelf.testString = @"hehe";
+    };
     
-    NSPStickyHeaderView *headerView = [[NSPStickyHeaderView alloc] initWithMinimunHeight:150];
-    UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"preview"]];
-    imageView.frame = headerView.bounds;
-    imageView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
-    [headerView addSubview:imageView];
-    [_tableView addSubview:headerView];
 }
 
 #pragma mark - UITableViewDataSource
