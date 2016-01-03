@@ -8,10 +8,21 @@
 
 #import <Foundation/Foundation.h>
 
-@interface ClassA : NSObject
+@protocol ClassADelegate <NSObject>
+
+@property (nonatomic, copy) NSString *delegateString;
+
+@end
+
+@interface ClassA : NSObject <NSCopying>//, ClassADelegate>
 
 @property (nonatomic, copy) NSString *age;
 @property (nonatomic, copy) NSString *name;
+
+@property (nonatomic, assign) NSString *money;
+
+@property (nonatomic, retain) NSString *test;
+
 
 - (id)methodA;
 - (instancetype)methodB;

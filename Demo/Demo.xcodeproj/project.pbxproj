@@ -19,6 +19,7 @@
 		1F6FA9941C1C0E2400673ADC /* Shylock.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F6FA98A1C1C0E2400673ADC /* Shylock.m */; };
 		1F6FA9A01C1C3C1000673ADC /* NSDictionary+NSPTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F6FA99F1C1C3C1000673ADC /* NSDictionary+NSPTools.m */; };
 		1F6FA9A31C1C3C6C00673ADC /* NSMutableDictionary+NSPTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F6FA9A21C1C3C6C00673ADC /* NSMutableDictionary+NSPTools.m */; };
+		1FC869911C349DB8006EC7F0 /* Aoo.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FC869901C349DB8006EC7F0 /* Aoo.m */; };
 		497A8C0E3C16AAE652AC2999 /* libPods-Demo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E8927D124023C4F1D82B6FE7 /* libPods-Demo.a */; };
 		D51E0BFC1BEF349F002E7844 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D51E0BFB1BEF349F002E7844 /* SecondViewController.m */; };
 		D5D7A15B1BE5BCD40089393C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D5D7A15A1BE5BCD40089393C /* main.m */; };
@@ -53,6 +54,8 @@
 		1F6FA99F1C1C3C1000673ADC /* NSDictionary+NSPTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+NSPTools.m"; sourceTree = "<group>"; };
 		1F6FA9A11C1C3C6C00673ADC /* NSMutableDictionary+NSPTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+NSPTools.h"; sourceTree = "<group>"; };
 		1F6FA9A21C1C3C6C00673ADC /* NSMutableDictionary+NSPTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+NSPTools.m"; sourceTree = "<group>"; };
+		1FC8698F1C349DB8006EC7F0 /* Aoo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Aoo.h; sourceTree = "<group>"; };
+		1FC869901C349DB8006EC7F0 /* Aoo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Aoo.m; sourceTree = "<group>"; };
 		29BD308A770A21256341C659 /* Pods-Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Demo/Pods-Demo.debug.xcconfig"; sourceTree = "<group>"; };
 		B7A8AF18EE1E120645022D1F /* Pods-Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Demo/Pods-Demo.release.xcconfig"; sourceTree = "<group>"; };
 		D51E0BFA1BEF349F002E7844 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
@@ -85,10 +88,6 @@
 		1F6FA9781C1C0E2400673ADC /* TestCodes */ = {
 			isa = PBXGroup;
 			children = (
-				1F6FA9791C1C0E2400673ADC /* Boo.h */,
-				1F6FA97A1C1C0E2400673ADC /* Boo.m */,
-				1F6FA97B1C1C0E2400673ADC /* ClassA.h */,
-				1F6FA97C1C1C0E2400673ADC /* ClassA.m */,
 				1F6FA97D1C1C0E2400673ADC /* ClassB.h */,
 				1F6FA97E1C1C0E2400673ADC /* ClassB.m */,
 				1F6FA97F1C1C0E2400673ADC /* CustomView.h */,
@@ -97,12 +96,18 @@
 				1F6FA9821C1C0E2400673ADC /* DeriveWebView.h */,
 				1F6FA9831C1C0E2400673ADC /* DeriveWebView.m */,
 				1F6FA9841C1C0E2400673ADC /* DeriveWebView.xib */,
+				1F6FA9791C1C0E2400673ADC /* Boo.h */,
+				1F6FA97A1C1C0E2400673ADC /* Boo.m */,
+				1FC8698F1C349DB8006EC7F0 /* Aoo.h */,
+				1FC869901C349DB8006EC7F0 /* Aoo.m */,
 				1F6FA9851C1C0E2400673ADC /* Foo.h */,
 				1F6FA9861C1C0E2400673ADC /* Foo.m */,
 				1F6FA9871C1C0E2400673ADC /* Shylock+Watson.h */,
 				1F6FA9881C1C0E2400673ADC /* Shylock+Watson.m */,
 				1F6FA9891C1C0E2400673ADC /* Shylock.h */,
 				1F6FA98A1C1C0E2400673ADC /* Shylock.m */,
+				1F6FA97B1C1C0E2400673ADC /* ClassA.h */,
+				1F6FA97C1C1C0E2400673ADC /* ClassA.m */,
 			);
 			path = TestCodes;
 			sourceTree = "<group>";
@@ -315,6 +320,7 @@
 				1F6FA98B1C1C0E2400673ADC /* Boo.m in Sources */,
 				D5D7A1611BE5BCD40089393C /* ViewController.m in Sources */,
 				1F6FA9921C1C0E2400673ADC /* Foo.m in Sources */,
+				1FC869911C349DB8006EC7F0 /* Aoo.m in Sources */,
 				D5D7A15E1BE5BCD40089393C /* AppDelegate.m in Sources */,
 				1F6FA9901C1C0E2400673ADC /* DeriveWebView.m in Sources */,
 				D5D7A15B1BE5BCD40089393C /* main.m in Sources */,

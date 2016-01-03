@@ -6,9 +6,11 @@
 //  Copyright © 2015 FNNishipu. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "ClassA.h"
 
-@interface ClassB : NSObject
+@interface ClassB : ClassA
+
+@property (nonatomic, copy) NSString *name;
 
 - (id)methodX;
 

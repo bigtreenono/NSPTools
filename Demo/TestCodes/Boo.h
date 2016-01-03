@@ -10,4 +10,6 @@
 
 @interface Boo : NSObject
 
+@property (nonatomic, copy) NSString *name;
+
 @end

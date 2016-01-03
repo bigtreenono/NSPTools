@@ -9,6 +9,16 @@
 #import "ClassB.h"
 
 @implementation ClassB
+
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        self.name = @"name";
+    }
+    return self;
+}
+
 - (id)methodX
 {
     return self;

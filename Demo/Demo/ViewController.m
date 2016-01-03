@@ -13,22 +13,29 @@
 #import <objc/runtime.h>
 #import "NSDictionary+NSPTools.h"
 #import "extobjc.h"
+#import <BlocksKit.h>
+#import "Aoo.h"
+
+typedef void(^MyBlock)(NSString *str);
 
 @interface ViewController () <UIWebViewDelegate>
+
 @property (weak, nonatomic) IBOutlet UIWebView *webView;
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
 @property (nonatomic, copy) void(^Callback)(void);
 @property (weak, nonatomic) IBOutlet UIButton *button;
 @property (nonatomic, copy) NSMutableArray *array;
+
 @end
+
+#define BLOCK_EXEC(block, ...) if (block) {block(__VA_ARGS__);};
 
 @implementation ViewController
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-//    [self method];
+
 }
 
 // memory leak
@@ -43,6 +50,14 @@
 
 - (IBAction)buttonTapped:(id)sender
 {
+    NSArray *items = @[@1, @2, @3];
+    for (int i = -1;
+         i < items.count;
+         i++)
+    {
+        NSLog(@"%d", i);
+    }
+
     ClassA *a4 = [[ClassA alloc] init];
     a4.age = @"1234";
     
