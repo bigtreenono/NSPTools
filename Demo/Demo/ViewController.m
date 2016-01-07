@@ -35,7 +35,6 @@ typedef void(^MyBlock)(NSString *str);
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
 }
 
 // memory leak
