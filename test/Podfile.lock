@@ -1,0 +1,34 @@
+PODS:
+  - KVOController (1.1.0)
+  - libextobjc/EXTScope (0.4.1):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/RuntimeExtensions (0.4.1)
+  - Mantle (1.5.8):
+    - Mantle/extobjc (= 1.5.8)
+  - Mantle/extobjc (1.5.8)
+  - SDRecordButton (1.0.2)
+  - SDVersion (3.1)
+  - UIView+FDCollapsibleConstraints (1.1)
+  - YYKit (1.0.6):
+    - YYKit/no-arc (= 1.0.6)
+  - YYKit/no-arc (1.0.6)
+
+DEPENDENCIES:
+  - KVOController
+  - libextobjc/EXTScope
+  - Mantle (~> 1.5.7)
+  - SDRecordButton
+  - SDVersion
+  - UIView+FDCollapsibleConstraints
+  - YYKit
+
+SPEC CHECKSUMS:
+  KVOController: 321b5fc59300fcaabd42c0f679baa7a27efbb2fd
+  libextobjc: a650fc1bf489a3d3a9bc2e621efa3e1006fc5471
+  Mantle: f03b2b606c3f0cabd80214ad8a2fed6b464a7359
+  SDRecordButton: f9d6918b1c874fd6d8a6969c23597edc00f9db67
+  SDVersion: 1eb1509995f353302094612ea3a77df289157687
+  UIView+FDCollapsibleConstraints: 9357eaf03b4e088263ab74a3b86a382a64ce38dd
+  YYKit: a80c77ab7be226ebe539ef1495dfc25d5766d61e
+
+COCOAPODS: 0.39.0
