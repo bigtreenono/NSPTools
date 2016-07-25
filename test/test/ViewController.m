@@ -38,22 +38,15 @@
     [super viewDidLoad];
     
     _leftButton.touchExtendInset = UIEdgeInsetsMake(-20, -20, -20, -20);
-    
-    CGRect rect2 = CGRectMake(10, -10, 100, 200);
-    CGRect rect3 = CGRectMake(-30, 30, 100, 200);
-//    CGRect rect1 = CGRectMake(0, 0, 100, 200);
-//    CGRect rect1 = CGRectMake(0, 0, 100, 200);
-    NSLog(@"%f, %f", CGRectGetMaxX(rect3), CGRectGetMaxY(rect2));
 }
 
 //- (BOOL)shouldAutorotate {
-//    NSLog(@"2222");
-//
-//    return YES;
+//    NSLog(@"ViewController shouldAutorotate");
+//    return NO;
 //}
 
 - (IBAction)test:(id)sender {
-    [[SubClass new] test];
+    
 }
 
 //- (UIInterfaceOrientationMask)supportedInterfaceOrientations {
@@ -62,9 +55,6 @@
 
 - (IBAction)action:(id)sender
 {
-    NSLog(@"22222222222222222222222222222222222222222222222222222222222222");
-    
-    [[UIDevice currentDevice] setValue:UIInterfaceOrientationIsLandscape([UIApplication sharedApplication].statusBarOrientation) ? @(UIInterfaceOrientationPortrait) : @(UIInterfaceOrientationLandscapeRight) forKey:@"orientation"];
 }
 
 - (void)didReceiveMemoryWarning {

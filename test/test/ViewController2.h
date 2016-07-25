@@ -6,8 +6,8 @@
 //  Copyright © 2016 Jeff. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "BaseViewController.h"
 
-@interface ViewController2 : UIViewController
+@interface ViewController2 : BaseViewController
 
 @end

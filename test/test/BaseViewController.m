@@ -9,7 +9,7 @@
 #import "BaseViewController.h"
 
 @interface BaseViewController ()
-
+@property (nonatomic, assign) BOOL shouldAutorotate;
 @end
 
 @implementation BaseViewController
@@ -29,17 +29,24 @@
 //    return NO;
 //}
 
-- (UIInterfaceOrientationMask)supportedInterfaceOrientations
-{
-    NSLog(@"BaseViewController supportedInterfaceOrientations");
-    return UIInterfaceOrientationMaskPortrait;
+//- (UIInterfaceOrientationMask)supportedInterfaceOrientations {
+//    NSLog(@"BaseViewController supportedInterfaceOrientations");
+//    return UIInterfaceOrientationMaskPortrait;
+//}
+
+- (void)rotateScreen {
+    _shouldAutorotate = YES;
+    NSLog(@"before 1111111111111111111111111111111111111111111111111111111111111111");
+    [[UIDevice currentDevice] setValue:UIInterfaceOrientationIsLandscape([UIApplication sharedApplication].statusBarOrientation) ? @(UIInterfaceOrientationPortrait) : @(UIInterfaceOrientationLandscapeRight) forKey:@"orientation"];
+    
+    NSLog(@"after 1111111111111111111111111111111111111111111111111111111111111111");
+
+    _shouldAutorotate = NO;
 }
 
-- (BOOL)shouldAutorotate
-{
+- (BOOL)shouldAutorotate {
     NSLog(@"BaseViewController shouldAutorotate");
-
-    return NO;
+    return _shouldAutorotate;
 }
 
 /*

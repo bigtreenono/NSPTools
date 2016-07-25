@@ -40,14 +40,20 @@
 }
 
 - (IBAction)click:(id)sender {
-    [_scrollView scrollToRight];
+    
+    [self rotateScreen];
+//    [[UIDevice currentDevice] setValue:UIInterfaceOrientationIsLandscape([UIApplication sharedApplication].statusBarOrientation) ? @(UIInterfaceOrientationPortrait) : @(UIInterfaceOrientationLandscapeRight) forKey:@"orientation"];
 }
 
-- (NSUInteger)jc_millisecond
-{
-    return (NSUInteger)ceil([[NSDate date] timeIntervalSince1970] * 1000);
-    return ceil((NSUInteger)[[NSDate date] timeIntervalSince1970] * 1000);
-}
+//- (UIInterfaceOrientationMask)supportedInterfaceOrientations {
+//    return UIInterfaceOrientationMaskAllButUpsideDown;
+//}
+
+
+//- (BOOL)shouldAutorotate {
+//    NSLog(@"ViewController2 shouldAutorotate");
+//    return YES;
+//}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
