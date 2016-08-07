@@ -24,11 +24,6 @@
     // Dispose of any resources that can be recreated.
 }
 
-//- (BOOL)shouldAutorotate {
-//    NSLog(@"111");
-//    return NO;
-//}
-
 //- (UIInterfaceOrientationMask)supportedInterfaceOrientations {
 //    NSLog(@"BaseViewController supportedInterfaceOrientations");
 //    return UIInterfaceOrientationMaskPortrait;
@@ -45,7 +40,7 @@
 }
 
 - (BOOL)shouldAutorotate {
-    NSLog(@"BaseViewController shouldAutorotate");
+//    NSLog(@"BaseViewController shouldAutorotate");
     return _shouldAutorotate;
 }
 

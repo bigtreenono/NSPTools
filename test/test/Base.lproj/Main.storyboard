@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="j1U-Nn-TAm">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="j1U-Nn-TAm">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -56,11 +56,14 @@
                                     <segue destination="ioE-3K-CuC" kind="push" id="Ue9-pY-5zC"/>
                                 </connections>
                             </button>
-                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="0kX-VG-6V7">
-                                <rect key="frame" x="28" y="274" width="20" height="20"/>
-                            </activityIndicatorView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="image1" translatesAutoresizingMaskIntoConstraints="NO" id="29u-sC-XcL">
+                                <rect key="frame" x="28" y="258" width="71" height="51"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="image2" translatesAutoresizingMaskIntoConstraints="NO" id="Rzh-No-0l1">
+                                <rect key="frame" x="28" y="339" width="71" height="51"/>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="tfz-IN-rIW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="28" id="MWf-G9-VJF"/>
                             <constraint firstItem="rCJ-vY-zuh" firstAttribute="top" secondItem="Pum-z7-mGT" secondAttribute="bottom" constant="14" id="ThI-dh-TXX"/>
@@ -72,7 +75,6 @@
                     </view>
                     <navigationItem key="navigationItem" id="qtS-yv-sAs"/>
                     <connections>
-                        <outlet property="indicatorView" destination="0kX-VG-6V7" id="7Ig-1j-XIv"/>
                         <outlet property="label" destination="rCJ-vY-zuh" id="1bN-Bx-hML"/>
                         <outlet property="leftButton" destination="tfz-IN-rIW" id="iuy-yl-28X"/>
                         <outlet property="testView" destination="Pum-z7-mGT" id="wdc-2C-Kch"/>
@@ -129,4 +131,8 @@
             <point key="canvasLocation" x="-442" y="288"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="image1" width="16" height="20"/>
+        <image name="image2" width="25" height="25"/>
+    </resources>
 </document>

@@ -1,4 +1,4 @@
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers/Private" "${PODS_ROOT}/Headers/Private/UIView+FDCollapsibleConstraints" "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/KVOController" "${PODS_ROOT}/Headers/Public/Mantle" "${PODS_ROOT}/Headers/Public/SDRecordButton" "${PODS_ROOT}/Headers/Public/SDVersion" "${PODS_ROOT}/Headers/Public/UIView+FDCollapsibleConstraints" "${PODS_ROOT}/Headers/Public/YYKit" "${PODS_ROOT}/Headers/Public/libextobjc"
+HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers/Private" "${PODS_ROOT}/Headers/Private/UIView+FDCollapsibleConstraints" "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/KVOController" "${PODS_ROOT}/Headers/Public/Mantle" "${PODS_ROOT}/Headers/Public/SDRecordButton" "${PODS_ROOT}/Headers/Public/SDVersion" "${PODS_ROOT}/Headers/Public/UIActionSheet+Blocks" "${PODS_ROOT}/Headers/Public/UIAlertView+Blocks" "${PODS_ROOT}/Headers/Public/UIView+FDCollapsibleConstraints" "${PODS_ROOT}/Headers/Public/YYKit" "${PODS_ROOT}/Headers/Public/libextobjc"
 PODS_ROOT = ${SRCROOT}
 SKIP_INSTALL = YES
