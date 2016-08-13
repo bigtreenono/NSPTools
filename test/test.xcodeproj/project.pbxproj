@@ -214,7 +214,7 @@
 				TargetAttributes = {
 					1F260F0F1CE6FAB500F53D5B = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = 6CD39M4J7Q;
+						DevelopmentTeam = Z2K494VF76;
 					};
 				};
 			};
@@ -441,7 +441,7 @@
 				INFOPLIST_FILE = test/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.jince.test;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jince.a;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -458,7 +458,7 @@
 				INFOPLIST_FILE = test/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.jince.test;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jince.a;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";

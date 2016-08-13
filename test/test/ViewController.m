@@ -42,26 +42,18 @@
     
 //    _leftButton.touchExtendInset = UIEdgeInsetsMake(-20, -20, -20, -20);
     
-    uint32_t a = 0x12345678;
-    NSLog(@"%@", [NSData dataWithBytes:&a length:sizeof(uint32_t)]);
-
     
-    typedef struct {
-        uint64_t a;
-        uint8_t  b;
-        uint32_t c;
-        uint8_t  d;
-        uint16_t e;
-    } TestStruct;
-    
-    TestStruct test = {1, 2, 3, 4, 5};
-    NSUInteger length = sizeof(TestStruct);
-    NSLog(@"%ld %@", length, [NSData dataWithBytes:&test length:length]);
 
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(notification:) name:@"test" object:nil];
+}
+
+- (void)notification:(NSNotification *)notify {
+    NSLog(@"44444444444444444444444444444444444444444444444444444444444444444444444444444");
 }
 
 - (void)performSelectorOnceAfterDelay:(NSTimeInterval)delay block:(void (^)())block {
-    NSLog(@"self %p", self);
+    NSLog(@"xixi %@", block);
+//    [NSObject cancelPreviousPerformRequestsWithTarget:self];
     [NSObject cancelPreviousPerformRequestsWithTarget:self selector:@selector(jc_performBlock:) object:block];
     [self performSelector:@selector(jc_performBlock:) withObject:block afterDelay:delay];
 }
@@ -81,14 +73,25 @@
 - (IBAction)action:(id)sender
 {
     __weak typeof(self) weakSelf = self;
-    [self performSelectorOnceAfterDelay:2 block:^{
-        NSLog(@"22222222222222222222222222222222222222222222222222222222222222 weakSelf %p", weakSelf);
-    }];
+    
+//    [NSObject cancelPreviousPerformRequestsWithTarget:self selector:@selector(test2) object:nil];
+//    [self performSelector:@selector(test2) withObject:nil afterDelay:2];
+    
+    void (^xixi)() = ^{
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"test" object:weakSelf];
+    };
+    
+    NSLog(@"xixi %@", xixi);
+
+    [self performSelectorOnceAfterDelay:2 block:xixi];
+}
+
+- (void)test2 {
+    NSLog(@"3333333333333333333333333333333333333333333333333333333333333333333333333333333333 self %@", self);
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 @end
