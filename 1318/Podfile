@@ -1,0 +1,24 @@
+platform :ios, '7.0'
+
+
+target '1318' do
+
+pod 'Masonry'
+pod 'XXNibBridge', '~> 2.2.3'
+pod 'UIView+FDCollapsibleConstraints'
+pod 'UITableView+FDTemplateLayoutCell'
+pod 'TPKeyboardAvoiding'
+pod 'UIAlertView+Blocks'
+pod 'UIActionSheet+Blocks'
+pod 'MBProgressHUD'
+pod 'KVOController'
+pod 'AFNetworking'
+pod 'KVOController'
+pod 'IMYWebView'
+pod 'BFKit'
+pod 'CocoaAsyncSocket', '~> 7.4.3'
+pod 'YYKit'
+pod 'Mantle', '~> 1.5.7'
+
+end
+
