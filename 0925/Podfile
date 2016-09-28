@@ -1,0 +1,21 @@
+platform :ios, '7.0'
+
+target '0925' do
+pod 'Masonry'
+pod 'XXNibBridge'
+pod 'UIView+FDCollapsibleConstraints'
+pod 'UITableView+FDTemplateLayoutCell'
+pod 'SWTableViewCell'
+pod 'TPKeyboardAvoiding'
+pod 'UIAlertView+Blocks'
+pod 'UIActionSheet+Blocks'
+pod 'MBProgressHUD'
+pod 'KVOController'
+pod 'AFNetworking'
+pod 'KVOController'
+pod 'BFKit'
+pod 'CocoaAsyncSocket', '~> 7.4.3'
+pod 'YYKit'
+pod 'Mantle', '~> 1.5.7'
+
+end
