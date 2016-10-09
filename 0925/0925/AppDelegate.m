@@ -23,7 +23,7 @@
     YYCache *cache = [YYCache cacheWithName:@"com.jince.cacheManager"];
     //    cache.diskCache.autoTrimInterval = 10;
 //    cache.diskCache.ageLimit = 3600 * 24;
-//    [cache.diskCache trimToAge:3600 * 24];///
+//    [cache.diskCache trimToAge:3600 * 24];///asdf
     cache.diskCache.ageLimit = 10;
     [cache.diskCache trimToAge:10];
     cache.memoryCache.ageLimit = 10;
